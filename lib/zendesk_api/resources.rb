@@ -192,6 +192,7 @@ module ZendeskAPI
     has_many Comment
 
     has Organization
+    has :assignee, :class => User
     has :requester, :class => User
   end
 
