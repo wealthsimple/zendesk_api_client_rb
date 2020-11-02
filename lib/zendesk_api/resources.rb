@@ -184,6 +184,11 @@ module ZendeskAPI
     end
 
     has_many Section
+
+    class Translation < Resource
+    end
+  
+    has_many Translation
   end
 
   class Section < Resource
@@ -199,6 +204,11 @@ module ZendeskAPI
     end
 
     has_many Article
+
+    class Translation < Resource
+    end
+
+    has_many Translation
   end
 
   class Article < ReadResource
