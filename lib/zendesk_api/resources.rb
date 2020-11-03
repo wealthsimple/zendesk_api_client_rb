@@ -226,6 +226,11 @@ module ZendeskAPI
 
     class DownVote < Resource
     end
+    
+    class Label < Resource
+    end
+
+    has_many Label
 
     class Translation < Resource
     end
